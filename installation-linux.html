@@ -72,7 +72,7 @@ a local copy of the repository of the project, with the command:</p>
 <p class="nofirst">Under Ubuntu/Debian/Mint:</p>
 
 <div class="commandline">
-<code>sudo aptitude install autotools-dev flex bison libltdl7-dev texlive-luatex autopoint python-fontforge</code>
+<code>sudo aptitude install autotools-dev flex bison libltdl7-dev texlive-luatex autopoint python-fontforge fontforge autoconf</code>
 </div>
 
 For gregorio versions &lt;4.0, is you are using <span style="font-family: monospace;">--enable-xml-read</span> then this additional dependency is needed:
@@ -81,7 +81,10 @@ For gregorio versions &lt;4.0, is you are using <span style="font-family: monosp
   <code>libxml2-dev</code>
 </div>
 
-If you're using another distribution, some packages may have a slightly different name.
+If you're using another distribution, some packages may have a slightly different name. I.e. under Ubuntu you can use <code>apt-get</code> instead of <code>aptitude</code>.
+
+If you're going to build gregorio from source code, you may need in addition following packages:
+<code>fontforge cmake autoconf</code>
 
 <h2>Building</h2>
 
